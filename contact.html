@@ -87,13 +87,29 @@
           </div>
           
           <div id="w-node-db289675-c74d-bc81-254e-a35a802fe12b-b5ffbcfa" data-w-id="db289675-c74d-bc81-254e-a35a802fe12b" style="opacity:0" class="form-wrapper w-form">  
-            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="67ac0e5e70ffcb46b5ffbcfa" data-wf-element-id="db289675-c74d-bc81-254e-a35a802fe12c">
+            <form id="email-form" name="email-form" action="https://formsubmit.co/8d2861558b51f4e5114500d711fcdeff" method="POST" class="form">
+  
+              <!-- Prevent Spam & Customize Email Response -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="New Form Submission!">
+              <input type="hidden" name="_template" value="table">
+            
               <div class="form-content">
-                <div class="name-wrapper-contact"><label for="Name" class="text-size-medium-vw">Name</label><input class="text-field-contact w-input" maxlength="256" name="Name" data-name="Name" placeholder="Enter your name" type="text" id="Name" required=""></div>
-                <div class="name-wrapper-contact"><label for="Enter-Your-Email" class="text-size-medium-vw">E-mail</label><input class="text-field-contact w-input" maxlength="256" name="Enter-Your-Email" data-name="Enter Your Email" placeholder="Enter your e-mail" type="email" id="Enter-Your-Email" required=""></div><label for="Text-Field" class="text-size-medium-vw">Message</label><textarea id="Text-Field" name="Text-Field" maxlength="5000" data-name="Text Field" placeholder="Your message..." class="text-field-contact w-input"></textarea>
+                <div class="name-wrapper-contact">
+                  <label for="Name" class="text-size-medium-vw">Name</label>
+                  <input class="text-field-contact w-input" maxlength="256" name="name" placeholder="Enter your name" type="text" id="Name" required="">
+                </div>
+                <div class="name-wrapper-contact">
+                  <label for="Enter-Your-Email" class="text-size-medium-vw">E-mail</label>
+                  <input class="text-field-contact w-input" maxlength="256" name="email" placeholder="Enter your e-mail" type="email" id="Enter-Your-Email" required="">
+                </div>
+                <label for="Text-Field" class="text-size-medium-vw">Message</label>
+                <textarea id="Text-Field" name="message" maxlength="5000" placeholder="Your message..." class="text-field-contact w-input"></textarea>
               </div>
+            
               <div class="contact-button align-center">
-                <div class="primary-button"><input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit">
+                <div class="primary-button">
+                  <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Submit">
                   <div class="relative">
                     <div class="text-size-small text-weight-bold">Submit Message</div>
                   </div>
@@ -101,6 +117,7 @@
                 </div>
               </div>
             </form>
+            
 
             <div class="success-message w-form-done">
               <div class="text-size-contact">Thank you! Your submission has been received!</div>
