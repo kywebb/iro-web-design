@@ -3962,3 +3962,32 @@ blockquote {
   font-style: normal;
   font-display: swap;
 }
+
+.brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .brand img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .brand img {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .brand img {
+    max-width: 50%;
+  }
+}
+
+.nav-menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
