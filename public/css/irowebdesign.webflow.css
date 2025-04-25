@@ -667,16 +667,54 @@ blockquote {
 }
 
 .primary-button {
+  background-color: var(--color--orange);
   color: var(--color--white);
-  background-color: #ed5145;
-  border-radius: 50rem;
-  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: inline-flex;
   align-items: center;
-  padding: .75rem 1.5rem;
   text-decoration: none;
-  display: flex;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+
+.primary-button:hover {
+  background-color: #d1453b;
+  transform: translateY(-2px);
+}
+
+.primary-button.about-btns {
+  margin-top: 20px;
+  background-color: var(--color--orange);
+  color: var(--color--white);
+  z-index: 1;
+  position: relative;
+}
+
+.button-elipse {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  display: block;
+  background-color: var(--color--orange);
+  transform: translate(100%, 0%);
+  transition: transform 0.3s;
+}
+
+.primary-button:hover .button-elipse {
+  transform: translate(0%, 0%);
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: var(--color--black);
 }
 
 .trusted-by-hero-logos {
@@ -4743,4 +4781,19 @@ blockquote {
   font-weight: 300;
   font-style: normal;
   font-display: swap;
+}
+
+.primary-button.about-btns {
+  background-color: var(--color--orange);
+  color: var(--color--white);
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button.about-btns:hover {
+  background-color: #d1453b;
 }
